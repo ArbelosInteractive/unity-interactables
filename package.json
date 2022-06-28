@@ -1,0 +1,23 @@
+{
+  "name": "com.arbelos.interactables",
+  "version": "0.0.1",
+  "displayName": "Arbelos Interactables",
+  "description": "This is a package to integrate Gooru",
+  "unity": "2021.3",
+  "unityRelease": "3f1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "keywords": [
+    "Interactable",
+    "Arbelos",
+    "IInteractable",
+    "IInteractable Networked"
+  ],
+  "author": {
+    "name": "Arbelos Interactive Inc",
+    "email": "hello@arbelosinteractive.com",
+    "url": "https://www.arbelosinteractive.com/"
+  },
+  "type": "library"
+}

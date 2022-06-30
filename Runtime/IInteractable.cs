@@ -13,26 +13,8 @@ namespace Arbelos
         UnityEvent OnInteractUpdateEvent { get; set; }
 
 
-        public void OnInteractEnter() 
-        { 
-            if(OnInteractEnterEvent != null)
-            {
-                OnInteractEnterEvent.Invoke();
-            }
-        }
-        public void OnInteractExit() 
-        {
-            if (OnInteractExitEvent != null)
-            {
-                OnInteractExitEvent.Invoke();
-            }
-        }
-        public void OnInteractUpdate() 
-        {
-            if (OnInteractUpdateEvent != null)
-            {
-                OnInteractUpdateEvent.Invoke();
-            }
-        }
+        public void OnInteractEnter() {  }
+        public void OnInteractExit() { }
+        public void OnInteractUpdate() { }
     }
 }

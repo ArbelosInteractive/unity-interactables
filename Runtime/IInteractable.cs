@@ -7,10 +7,10 @@ namespace Arbelos
 {
     public interface IInteractable 
     {
-        AnimatorOverrideController animationOverrideController { get; set; };
-        UnityEvent OnInteractEnterEvent { get; set; };
-        UnityEvent OnInteractExitEvent { get; set; };
-        UnityEvent OnInteractUpdateEvent { get; set; };
+        AnimatorOverrideController animationOverrideController { get; set; }
+        UnityEvent OnInteractEnterEvent { get; set; }
+        UnityEvent OnInteractExitEvent { get; set; }
+        UnityEvent OnInteractUpdateEvent { get; set; }
 
 
         protected void OnInteractEnter() 

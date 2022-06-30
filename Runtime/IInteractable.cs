@@ -12,6 +12,7 @@ namespace Arbelos
         UnityEvent OnInteractExitEvent { get; set; }
         UnityEvent OnInteractUpdateEvent { get; set; }
 
+        bool ShouldUpdate { get; set; }
 
         public void OnInteractEnter();
         public void OnInteractExit();

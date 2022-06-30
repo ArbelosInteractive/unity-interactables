@@ -13,21 +13,21 @@ namespace Arbelos
         UnityEvent OnInteractUpdateEvent { get; set; }
 
 
-        protected void OnInteractEnter() 
+        public void OnInteractEnter() 
         { 
             if(OnInteractEnterEvent != null)
             {
                 OnInteractEnterEvent.Invoke();
             }
         }
-        protected void OnInteractExit() 
+        public void OnInteractExit() 
         {
             if (OnInteractExitEvent != null)
             {
                 OnInteractExitEvent.Invoke();
             }
         }
-        protected void OnInteractUpdate() 
+        public void OnInteractUpdate() 
         {
             if (OnInteractUpdateEvent != null)
             {

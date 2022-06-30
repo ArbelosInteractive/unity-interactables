@@ -7,13 +7,11 @@ namespace Arbelos
 {
     public interface IInteractable 
     {
-        protected AnimationOverrideController animationOverrideController;
-        protected UnityEvent OnInteractEnterEvent;
-        protected UnityEvent OnInteractExitEvent;
-        protected UnityEvent OnInteractUpdateEvent;
+        AnimatorOverrideController animationOverrideController { get; set; };
+        UnityEvent OnInteractEnterEvent { get; set; };
+        UnityEvent OnInteractExitEvent { get; set; };
+        UnityEvent OnInteractUpdateEvent { get; set; };
 
-
-        public virtual Interact() { }
 
         protected void OnInteractEnter() 
         { 
@@ -31,9 +29,9 @@ namespace Arbelos
         }
         protected void OnInteractUpdate() 
         {
-            if (OnInteracterUpdateEvent != null)
+            if (OnInteractUpdateEvent != null)
             {
-                OnInteracterUpdateEvent.Invoke();
+                OnInteractUpdateEvent.Invoke();
             }
         }
     }

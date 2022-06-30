@@ -6,7 +6,7 @@ namespace Arbelos
 {
     public interface IInteractableNetworked : IInteractable
     {
-        public virtual rpc_interact()
+        public virtual void RPC_interact()
         {
             Debug.Log("Interacting over the network....");
         }

@@ -1,12 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 namespace Arbelos
 {
-    public interface IInteractableNetworked : IInteractable
+    public interface IInteractableNetworked 
     {
-        public virtual void RPC_Interact();
+        public UnityEvent OnInteractEnterEvent { get; set; }
+        public UnityEvent OnInteractExitEvent { get; set; }
+        public UnityEvent OnInteractUpdateEvent { get; set; }
+
+        public bool ShouldUpdate { get; set; }
+        public int AnimatorControllerIndex { get; set; }
+
+        public void OnInteractEnter();
+        public void OnInteractExit();
+        public void OnInteractUpdate();
     }
 }

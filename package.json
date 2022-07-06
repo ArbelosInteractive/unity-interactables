@@ -1,6 +1,6 @@
 {
   "name": "com.arbelos.interactables",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "displayName": "Interactables",
   "description": "A package of scripts for interactive objects.",
   "unity": "2021.3",

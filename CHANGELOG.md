@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.1] - 2022-06-28
+## [1.0.0] - 2022-06-28
 ### Added
 - Initial setup of package
+### Added
+- support for networked and non-networked interactables
+- added a helper script for networked interactables
